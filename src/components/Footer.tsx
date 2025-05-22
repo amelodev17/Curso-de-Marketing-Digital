@@ -3,7 +3,7 @@ import { Instagram, Facebook, X } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="w-full mt-16 py-8 bg-marketing-blue-900 text-white flex flex-col items-center gap-4">
+    <footer className="w-full py-8 bg-marketing-blue-900 text-white flex flex-col items-center gap-4">
       <div className="flex gap-6 mb-2">
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:scale-110 transition-transform duration-200">
           <Instagram size={28} />
