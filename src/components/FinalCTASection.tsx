@@ -1,18 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Clock, 
-  CheckCircle, 
-  Users, 
-  Zap,
-  ArrowRight 
-} from "lucide-react";
-
+import { Clock, CheckCircle, Users, Zap, ArrowRight } from "lucide-react";
 export const FinalCTASection = () => {
-  return (
-    <section className="relative py-20 px-4 bg-gradient-to-br from-marketing-blue-900 via-marketing-blue-800 to-marketing-blue-700 text-white overflow-hidden">
+  return <section className="relative py-20 px-4 bg-gradient-to-br from-marketing-blue-900 via-marketing-blue-800 to-marketing-blue-700 text-white overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 bg-white/5 rounded-full blur-xl" />
@@ -23,7 +14,7 @@ export const FinalCTASection = () => {
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         {/* Urgency Badge */}
         <div className="flex justify-center mb-6">
-          <Badge className="bg-red-600 text-white px-6 py-3 text-lg font-bold animate-pulse">
+          <Badge className="bg-red-600 text-white px-6 py-3 text-lg font-bold animate-pulse no hover">
             <Clock className="w-5 h-5 mr-2" />
             VAGAS LIMITADAS
           </Badge>
@@ -60,10 +51,7 @@ export const FinalCTASection = () => {
 
         {/* Main CTA Button */}
         <div className="mb-8">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-12 py-6 text-xl md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse-glow"
-          >
+          <Button size="lg" className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-12 py-6 text-xl md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse-glow">
             <Zap className="w-6 h-6 mr-3" />
             QUERO GARANTIR MINHA VAGA AGORA
             <ArrowRight className="w-6 h-6 ml-3" />
@@ -99,6 +87,5 @@ export const FinalCTASection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

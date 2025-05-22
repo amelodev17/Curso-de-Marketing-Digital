@@ -1,12 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Monitor, Smartphone, CheckCircle } from "lucide-react";
-
 export const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
+  return <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -37,10 +34,7 @@ export const HeroSection = () => {
 
             {/* CTA Button */}
             <div className="flex justify-center lg:justify-start">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-marketing-blue-600 to-marketing-blue-700 hover:from-marketing-blue-700 hover:to-marketing-blue-900 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
-              >
+              <Button size="lg" className="bg-gradient-to-r from-marketing-blue-600 to-marketing-blue-700 hover:from-marketing-blue-700 hover:to-marketing-blue-900 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow">
                 QUERO ME MATRICULAR AGORA
               </Button>
             </div>
@@ -57,17 +51,21 @@ export const HeroSection = () => {
                 </div>
               </Card>
               
-              <Card className="absolute top-32 right-8 p-4 bg-white/80 backdrop-blur-sm border-marketing-blue-200/50 animate-float" style={{animationDelay: '1s'}}>
+              <Card className="absolute top-32 right-8 p-4 bg-white/80 backdrop-blur-sm border-marketing-blue-200/50 animate-float" style={{
+              animationDelay: '1s'
+            }}>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-marketing-blue-500 rounded-full" />
-                  <span className="text-sm font-medium">847 leads captados</span>
+                  <span className="text-sm font-medium">1847 leads captados</span>
                 </div>
               </Card>
 
-              <Card className="absolute bottom-20 left-8 p-4 bg-white/80 backdrop-blur-sm border-marketing-blue-200/50 animate-float" style={{animationDelay: '2s'}}>
+              <Card className="absolute bottom-20 left-8 p-4 bg-white/80 backdrop-blur-sm border-marketing-blue-200/50 animate-float" style={{
+              animationDelay: '2s'
+            }}>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-purple-500 rounded-full" />
-                  <span className="text-sm font-medium">32% conversão</span>
+                  <span className="text-sm font-medium">82% conversão</span>
                 </div>
               </Card>
             </div>
@@ -93,6 +91,5 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
