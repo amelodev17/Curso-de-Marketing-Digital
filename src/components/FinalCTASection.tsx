@@ -51,7 +51,7 @@ export const FinalCTASection = () => {
 
         {/* Main CTA Button */}
         <div className="mb-8">
-          <Button size="lg" className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-12 py-6 text-xl md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse-glow and glowing bright animation of going far and not far">
+          <Button size="lg" className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-12 py-6 text-xl md:text-2xl font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse-glow and glowing bright animation of aproximating and disaproximating">
             <Zap className="w-6 h-6 mr-3" />
             QUERO GARANTIR MINHA VAGA AGORA
             <ArrowRight className="w-6 h-6 ml-3" />
