@@ -36,10 +36,11 @@ export const OfferSection = () => {
     description: "Roteiros passo a passo para suas campanhas",
     value: "R$ 297"
   }];
-  return <section className="relative py-20 px-4 bg-white">
+  return (
+    <section className="relative py-10 sm:py-16 px-2 sm:px-4 bg-white">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Veja Tudo o Que Você Vai{" "}
             <span className="bg-gradient-to-r from-marketing-blue-600 to-marketing-blue-700 bg-clip-text text-transparent">
               Receber
@@ -47,9 +48,8 @@ export const OfferSection = () => {
             ao se Inscrever
           </h2>
         </div>
-
         {/* What's Included */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 md:mb-12">
           {includes.map((item, index) => {
           const IconComponent = item.icon;
           return <Card key={index} className="p-6 bg-white/80 backdrop-blur-sm border-marketing-blue-200/50 hover:shadow-xl transition-all duration-300">
@@ -65,7 +65,7 @@ export const OfferSection = () => {
         </div>
 
         {/* Bonuses Section */}
-        <div className="mb-12">
+        <div className="mb-10 md:mb-12">
           <div className="text-center mb-8">
             <Badge className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 text-lg font-bold mb-4 animate-pulse-glow">
               <Gift className="w-5 h-5 mr-2" />
@@ -76,7 +76,7 @@ export const OfferSection = () => {
             </h3>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {bonuses.map((bonus, index) => <Card key={index} className="p-6 bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardContent className="p-0 text-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -100,5 +100,6 @@ export const OfferSection = () => {
           </p>
         </Card>
       </div>
-    </section>;
+    </section>
+  );
 };

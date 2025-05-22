@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
@@ -41,23 +40,22 @@ export const CourseSection = () => {
   ];
 
   return (
-    <section className="relative py-20 px-4 bg-white">
+    <section className="relative py-10 sm:py-16 px-2 sm:px-4 bg-white">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             O Que é o{" "}
             <span className="bg-gradient-to-r from-marketing-blue-600 to-marketing-blue-700 bg-clip-text text-transparent">
               Curso de Marketing Digital?
             </span>
           </h2>
-          
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8">
+          <p className="text-base md:text-xl text-gray-600 max-w-4xl mx-auto mb-8">
             Um treinamento completo, 100% online, direto ao ponto, que te ensina tudo sobre:
           </p>
         </div>
 
         {/* Modules Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 md:mb-12">
           {modules.map((module, index) => {
             const IconComponent = module.icon;
             return (

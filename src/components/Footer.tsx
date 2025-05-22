@@ -22,7 +22,7 @@ export const Footer = () => {
           <Facebook size={28} />
         </a>
       </div>
-      <div className="text-sm text-white/70">
+      <div className="text-sm text-white/70 text-center">
         feito por{" "}
         <a 
           href="https://amelfdev.com"

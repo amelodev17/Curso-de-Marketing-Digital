@@ -5,7 +5,7 @@ import { Shield, CheckCircle, Clock } from "lucide-react";
 
 export const GuaranteeSection = () => {
   return (
-    <section className="relative py-20 px-4 bg-white">
+    <section className="relative py-10 sm:py-16 px-2 sm:px-4 bg-white">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center">
           <Card className="p-12 bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200">

@@ -39,32 +39,28 @@ export const TestimonialsSection = () => {
     testimonial: "Saí do zero total. Hoje sou consultor de marketing digital e ajudo empresas a crescerem online. Minha agenda está sempre lotada!",
     initials: "FM"
   }];
-  return <section className="relative py-20 px-4 bg-gray-50 overflow-hidden">
+  return (
+    <section className="relative py-10 sm:py-16 px-2 sm:px-4 bg-gray-50 overflow-hidden">
       {/* Animated background particles */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-marketing-blue-400 rounded-full animate-pulse" />
-        <div className="absolute top-3/4 right-1/4 w-2 h-2 bg-marketing-blue-500 rounded-full animate-pulse" style={{
-        animationDelay: '1s'
-      }} />
-        <div className="absolute top-1/2 left-1/3 w-1 h-1 bg-marketing-blue-300 rounded-full animate-pulse" style={{
-        animationDelay: '2s'
-      }} />
+        <div className="absolute top-3/4 right-1/4 w-2 h-2 bg-marketing-blue-500 rounded-full animate-pulse" style={{animationDelay: '1s'}} />
+        <div className="absolute top-1/2 left-1/3 w-1 h-1 bg-marketing-blue-300 rounded-full animate-pulse" style={{animationDelay: '2s'}} />
       </div>
 
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Veja o Que Meus{" "}
             <span className="bg-gradient-to-r from-marketing-blue-600 to-marketing-blue-700 bg-clip-text text-transparent">
               Alunos Estão Falando
             </span>
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-base md:text-xl text-gray-600">
             Resultados reais de pessoas que saíram do zero e transformaram suas vidas
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => <Card key={index} className="p-6 bg-white/80 backdrop-blur-sm border-marketing-blue-200/50 hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-0">
                 {/* Quote Icon */}
@@ -106,9 +102,8 @@ export const TestimonialsSection = () => {
               </CardContent>
             </Card>)}
         </div>
-
         {/* Bottom CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-10 md:mt-12">
           <Card className="p-8 bg-gradient-to-r from-green-500 to-green-600 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Quer ser o próximo caso de sucesso?
@@ -117,5 +112,6 @@ export const TestimonialsSection = () => {
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };

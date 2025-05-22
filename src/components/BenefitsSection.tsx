@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   DollarSign, 
@@ -38,10 +37,10 @@ export const BenefitsSection = () => {
   ];
 
   return (
-    <section className="relative py-20 px-4 bg-gray-50">
+    <section className="relative py-10 sm:py-16 px-2 sm:px-4 bg-gray-50">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             O Que Você Vai{" "}
             <span className="bg-gradient-to-r from-marketing-blue-600 to-marketing-blue-700 bg-clip-text text-transparent">
               Conquistar
@@ -50,7 +49,7 @@ export const BenefitsSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
