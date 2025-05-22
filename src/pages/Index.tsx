@@ -12,7 +12,7 @@ import { GuaranteeSection } from "@/components/GuaranteeSection";
 import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 const Index = () => {
-  return <div className="min-h-screen overflow-x-hidden bg-purple-400 bg-[marketing-blue-700]">
+  return <div className="min-h-screen overflow-x-hidden bg-blue-900">
       {/* Floating background elements */}
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-marketing-blue-500/10 rounded-full blur-3xl animate-float" />
