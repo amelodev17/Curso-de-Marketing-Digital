@@ -65,12 +65,12 @@ export const Footer = () => {
       <div className="text-sm text-white/70 text-center">
         feito por{" "}
         <a
-          href="https://amelfdev.com"
+          href="https://amelfodev.com"
           className="underline hover:text-yellow-400"
           target="_blank"
           rel="noopener noreferrer"
         >
-          amelFdev
+          ameloFdev
         </a>
       </div>
     </footer>
