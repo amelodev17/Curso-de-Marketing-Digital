@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,17 +17,17 @@ import {
   Briefcase,
   Heart
 } from "lucide-react";
-import { 
-  HeroSection, 
-  ProblemSection, 
-  CourseSection, 
-  BenefitsSection, 
-  OfferSection, 
-  TestimonialsSection, 
-  GuaranteeSection, 
-  FinalCTASection, 
-  Footer 
-} from "@/components";
+
+// FIX: Import each section directly from its file
+import { HeroSection } from "@/components/HeroSection";
+import { ProblemSection } from "@/components/ProblemSection";
+import { CourseSection } from "@/components/CourseSection";
+import { BenefitsSection } from "@/components/BenefitsSection";
+import { OfferSection } from "@/components/OfferSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { GuaranteeSection } from "@/components/GuaranteeSection";
+import { FinalCTASection } from "@/components/FinalCTASection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -54,3 +55,4 @@ const Index = () => {
 };
 
 export default Index;
+
