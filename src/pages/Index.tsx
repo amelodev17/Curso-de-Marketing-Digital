@@ -25,6 +25,7 @@ import { OfferSection } from "@/components/OfferSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { GuaranteeSection } from "@/components/GuaranteeSection";
 import { FinalCTASection } from "@/components/FinalCTASection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -44,6 +45,7 @@ const Index = () => {
       <TestimonialsSection />
       <GuaranteeSection />
       <FinalCTASection />
+      <Footer />
     </div>
   );
 };
